@@ -56,11 +56,34 @@ body {
 }
 
 pre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--bg-pre);
   color: var(--text-pre);
   border-bottom: #000000 2px solid;
   font-size: 1.4em;
   padding: .5em 1em;
+}
+
+pre button {
+  color: #767676;
+  background: none;
+  border: none;
+  transition: 0.1s;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+pre button > svg {
+  transition: 0.1s;
+  fill: #767676
+}
+
+pre button:hover > svg {
+  fill: #ffffff;
 }
 
 a {
